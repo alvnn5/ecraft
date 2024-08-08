@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ECRAFT COFFE</h1>
+		<MARQUEE><H3>COFFE SHOP MASAKINI</H3></MARQUEE>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">PRODUCT</a></li>
+            <li><a href="transaksi.html">PEMESANAN</a></li>
+            <li><a href="invoice.html">INVOICE</a></li>
+            <li><a href="kontak.html">KONTA KAMI</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <main class="contentt">
+            <CENTER>
+                <h2>TABEL TRANSAKSI</h2>
+            </CENTER>
+            <table id="invoiceTable" border="1" cellspacing="0" cellpadding="10" width="100%">
+                
+                    <tr>
+                        <th>Nama  </th>
+                        <th>No.HP </th>
+                        <th>Produk</th>
+                        <th>Jumlah</th>
+                        <th>Table Area</th>
+                        <th>Total Harga</th>
+                    </tr>
+                    
+                
+                <tbody>
+                </tbody>
+            </table>
+            <br><br><br><br><br><br><br>
+            <CENTER>
+                <button onclick="tambahPesanan()">(+)</button>
+                <button onclick="bayarPesanan()">BAYAR</button>
+                <button onclick="resetPesanan()">(-)</button>
+                
+            </CENTER>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>ECAFT COFFE By Epuls</p>
+</footer>
+</html>

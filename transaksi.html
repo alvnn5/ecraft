@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ECRAFT COFFE</h1>
+		<MARQUEE><H3>COFFE SHOP MASAKINI</H3></MARQUEE>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">PRODUCT</a></li>
+            <li><a href="transaksi.html">PEMESANAN</a></li>
+            <li><a href="invoice.html">INVOICE</a></li>
+            <li><a href="kontak.html">KONTA KAMI</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="left">
+            <br>
+			<center>
+				KELEBIHAN
+			</center>
+			<hr>
+			<ul>
+				<li>coffe shop terbaik
+					</li>
+					<li>sertifikat coffeshop terbaik
+					</li>
+					<li>alat-alat coffe lengkap
+					</li>
+					<li>tersedia berbagai cabang
+					</li>
+			</ul>
+        </aside>
+        <main class="form-transaksi">
+            <CENTER><h2>Formulir Transaksi</h2></CENTER>
+            <form id="transaksiForm">
+                <label for="nama">Nama :</label><br>
+                <input type="text" id="nama" name="nama"><br><br>
+                <label for="nohp">No Handphone:</label><br>
+                <input type="text" id="nohp" name="nohp"><br><br>
+                <label for="produk">Produk :</label><br>
+                <input type="text" id="produk" name="produk"><br><br>
+                <label for="jumlah">Jumlah :</label><br>
+                <input type="number" id="jumlah" name="jumlah"><br><br>
+                <label for="pengambilan">Table Area :</label><br>
+                <div>
+                    <input type="radio" id="outdoor" name="table" value="outdoor">
+                    <label for="outdoor">Outdoor</label>
+                </div>
+                <div>
+                    <input type="radio" id="indoor" name="table" value="indoor">
+                    <label for="indoor">Indoor</label>
+                </div><br><br>
+                <button type="button" onclick="submitTransaksi()">Buat Pesanan</button>  
+                <button type="reset" onclick="beli(' ', 0)">Reset</button>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+	<p>ECAFT COFFE By Epuls</p>
+</footer>
+</html>
